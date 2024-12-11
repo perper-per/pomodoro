@@ -1,0 +1,21 @@
+{
+  "name": "permodoro",
+  "short_name": "pomo",
+  "icons": [
+    {
+      "src": "/permicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/permicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ec1c24",
+  "background_color": "#f32d0a",
+  "display": "standalone"
+}
