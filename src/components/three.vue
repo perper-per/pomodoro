@@ -37,7 +37,7 @@ onMounted(() => {
   // 直接用 renderer 給的 canvas
   root.value.appendChild(renderer.domElement)
 
-  textureLoader.load('/public/GalacticCenter_desktop.png', (texture) => {
+  textureLoader.load('/GalacticCenter_desktop.png', (texture) => {
     scene.background = texture
   })
 
