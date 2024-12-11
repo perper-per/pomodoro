@@ -22,6 +22,7 @@
       </v-col>
     </v-row>
   </v-container>
+<three></three>
 </template>
 
 <script setup>
