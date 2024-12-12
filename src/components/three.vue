@@ -37,7 +37,7 @@ onMounted(() => {
   // 直接用 renderer 給的 canvas
   root.value.appendChild(renderer.domElement)
 
-  textureLoader.load('/GalacticCenter_desktop.png', (texture) => {
+  textureLoader.load('./GalacticCenter_desktop.png', (texture) => {
     scene.background = texture
   })
 
@@ -45,7 +45,7 @@ onMounted(() => {
   light3.position.set( 0, 0, 2 );
   scene.add(light, light2, light3)
 
-  loader.load('/tomato.glb', (gltf) => {
+  loader.load('./tomato.glb', (gltf) => {
     scene.add(gltf.scene)
     loadedModel = gltf.scene
     loadedModel.scale.set(1.8, 1.8, 1.8)
