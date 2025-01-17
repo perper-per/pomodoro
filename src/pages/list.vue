@@ -1,10 +1,10 @@
 <template>
-  <v-container>
+  <v-container class="mx-auto fill-height" style="max-width: 80%;" >
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" class="d-flex justify-center align-center fill-height">
         <h1 class="text-center">正在進行</h1>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="8" class="mx-auto" >
         <v-table>
           <tbody>
             <tr v-if="current.length === 0">
@@ -16,10 +16,10 @@
           </tbody>
         </v-table>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="mx-auto">
         <h1 class="text-center">未完成</h1>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="8" class="mx-auto">
         <v-text-field
           ref="inputTextField"
           v-model="input"
@@ -65,10 +65,10 @@
         </v-table>
       </v-col>
 
-      <v-col cols="12">
+      <v-col cols="12" class="mx-auto">
         <h1 class="text-center">已完成</h1>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="8" class="mx-auto">
         <v-table>
           <thead>
             <tr>

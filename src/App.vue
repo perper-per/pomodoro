@@ -1,14 +1,14 @@
 <template>
   <v-app>
-    <v-app-bar>
-      <v-container class="d-flex align-center">
-        <v-app-bar-title>蕃茄鐘</v-app-bar-title>
+    <v-app-bar :style="{ backgroundColor: 'crimson' }">
+      <v-container class="d-flex align-center" >
+        <v-app-bar-title>蕃顛鐘</v-app-bar-title>
         <v-btn pretend-icon="mdi-home" to="/">首頁</v-btn>
         <v-btn pretend-icon="mdi-format-list-bulleted" to="/list">事項</v-btn>
         <v-btn pretend-icon="mdi-cog" to="/settings">設定</v-btn>
       </v-container>
     </v-app-bar>
-    <v-main>
+    <v-main class="bg">
       <!-- v-main 要放路由 = 各個頁面的主體 -->
         <!--
         slot = 插槽 = 自訂元件內的某部分 HTML
@@ -31,3 +31,9 @@
     </v-main>
   </v-app>
 </template>
+
+<style scoped>
+.bg {
+  background-color: #333;
+}
+</style>

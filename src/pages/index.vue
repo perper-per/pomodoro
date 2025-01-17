@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12">
-        <h1 style="color: cornflowerblue;">目前事項： {{ currentText }}</h1>
+        <h1 style="color: crimson;">目前事項： {{ currentText }}</h1>
       </v-col>
       <v-col cols="12">
          <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="white"></digit>
